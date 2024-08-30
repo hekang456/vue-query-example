@@ -1,0 +1,22 @@
+{
+	"name": "@tanstack/query-example-vue-basic",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite & json-server --watch src/db.json --port 3000",
+		"develop": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@tanstack/vue-query": "^5.52.2",
+		"@tanstack/vue-query-devtools": "^5.52.2",
+		"json-server": "1.0.0-beta.2",
+		"vue": "^3.4.27"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.1.1",
+		"typescript": "5.3.3",
+		"vite": "^5.4.2"
+	}
+}
