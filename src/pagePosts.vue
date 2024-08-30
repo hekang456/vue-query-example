@@ -29,7 +29,7 @@ const nextPage = () => {
 	<div v-else-if="isError">An error has occurred: {{ error }}</div>
 	<div v-else-if="data">
 		<ul>
-			<li v-for="item in data" :key="item.id">
+			<li v-for="item in data.data" :key="item.id">
 				{{ item.title }}
 			</li>
 		</ul>

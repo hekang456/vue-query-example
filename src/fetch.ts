@@ -22,7 +22,7 @@ export const addPostApi = async (post: Post): Promise<void> => {
 	});
 };
 
-export const fetchPageApi = (page: Ref<number>) =>
-	fetch(`http://localhost:3000/posts?_page=${page.value}&_limit=10`).then(
-		(response) => response.json()
-	);
+export const fetchPageApi = async (page: Ref<number>) =>
+	await fetch(
+		`http://localhost:3000/posts?_page=${page.value}&_per_page=10`
+	).then((response) => response.json());
